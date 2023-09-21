@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Social Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ff00d4, #00ddff); /* Pink to Sky Blue gradient */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column; /* Added to center-align the quote */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+        .block {
+            text-align: center;
+            background-color: #ffffff; /* Soft White background */
+            color: #000000; /* Black text color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            flex-basis: calc(33.33% - 20px); /* Adjust for 3 equal columns with spacing */
+            margin: 10px;
+            position: relative;
+        }
+        .block:hover {
+            transform: scale(1.05);
+        }
+        .block img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .block a {
+            text-decoration: none;
+            color: #000000; /* Black text color */
+        }
+        .quote {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+            text-align: center; /* Center-align the quote text */
+        }
+        .quote:before {
+            content: "❝"; /* Unicode left double quotation mark */
+            font-size: 36px;
+            margin-right: 5px;
+        }
+        .quote::after{
+            content: "❞"; /* Unicode left double quotation mark */
+            font-size: 36px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote">Hello HR Team! As a fresher,I'm excited to join this dynamic team and eager to contribute to our company's success.</div>
+    <div class="container">
+        <div class="block">
+            <a href="https://www.linkedin.com/in/gokul-e-kncet/" target="_blank">
+
+             <img src="images/logo/linkedin-logo.png" alt="LinkedIn Logo">
+            <h2>LinkedIn</h2>
+           </a>
+        </div>
+        <div class="block">
+            <a href="portfolio.html" target="_blank"> 
+                <img src="images/logo/portfolio-logo.png" alt="Portfolio Logo">
+            <h2>Portfolio</h2>
+            </a>
+        </div>
+        <div class="block">
+            <a href="https://github.com/Gokul01Elango" target="_blank">
+                <img src="images/logo/github-logo.png" alt="GitHub Logo">
+            <h2>GitHub</h2>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
